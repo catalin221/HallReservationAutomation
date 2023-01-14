@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HallReservation.Automation", "HallReservation.Automation\HallReservation.Automation.csproj", "{C9D24944-714D-40F7-990F-C863093E9EA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9D24944-714D-40F7-990F-C863093E9EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D24944-714D-40F7-990F-C863093E9EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D24944-714D-40F7-990F-C863093E9EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D24944-714D-40F7-990F-C863093E9EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACDA6F3D-A4C8-4F70-8C18-DA656C6BADEF}
+	EndGlobalSection
+EndGlobal
