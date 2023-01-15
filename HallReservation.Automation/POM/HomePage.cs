@@ -10,6 +10,7 @@ namespace HallReservation.Automation.POM
         private const string TRUPE_PAGE_REDIRECT_BUTTON_ID_SELECTOR = "TrupeButton";
         private const string SALI_PAGE_REDIRECT_BUTTON_ID_SELECTOR = "SaliButton";
         private const string ECHIPAMENTE_PAGE_REDIRECT_BUTTON_ID_SELECTOR = "EchipamenteButton";
+        public HomePage(IWebDriver driver) : base(driver) { }
 
         protected IWebElement createRezervarePageByLink => _driver.WaitForAndFindElement(By.Id(CREATE_REZERVARE_PAGE_REDIRECT_ID_SELECTOR));
         protected IWebElement rezervarePageByButton => _driver.WaitForAndFindElement(By.Id(REZERVARE_PAGE_REDIRECT_BUTTON_ID_SELECTOR));
@@ -17,9 +18,10 @@ namespace HallReservation.Automation.POM
         protected IWebElement saliPageByButton => _driver.WaitForAndFindElement(By.Id(SALI_PAGE_REDIRECT_BUTTON_ID_SELECTOR));
         protected IWebElement echipamentePageByButton => _driver.WaitForAndFindElement(By.Id(ECHIPAMENTE_PAGE_REDIRECT_BUTTON_ID_SELECTOR));
 
-
-
-        public HomePage(IWebDriver drive) : base(drive) { }
+        public void GoToHomePage()
+        {
+            GoToPage(_driver.Url);
+        }
 
         public void GoToCreateRezervarePageThroughLink()
         {

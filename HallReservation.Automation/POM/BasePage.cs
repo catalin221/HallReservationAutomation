@@ -9,12 +9,12 @@ namespace HallReservation.Automation.POM
 
         public BasePage(IWebDriver driver)
         {
-          _driver = DriverProvider.WebDriver;
+            _driver = driver;
         }
 
-        public void GoToHomePage()
+        public void GoToPage(string url)
         {
-            _driver.Navigate().GoToUrl(_driver.Url);
+            _driver.Navigate().GoToUrl(url);
         }
     }
 }

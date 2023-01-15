@@ -3,7 +3,7 @@ using HallReservation.Automation.Tests;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace HallReservation.Automation
+namespace HallReservation.Automation.Tests
 {
     public class HomePageShould : BaseTest
     {
@@ -26,9 +26,10 @@ namespace HallReservation.Automation
         }
 
         [Test]
-        public void LandOnSalaPageThroughButoon()
+        public void LandOnSalaPageThroughButton()
         {
             _homePage.GoToSaliPageThroughButton();
+            _salaPage.LandOnSalaListPage();
         }
 
         [Test]
